@@ -1,0 +1,46 @@
+html 
+{
+    box-sizing: border-box;
+}
+
+* , *:after , *:before 
+{
+    box-sizing: inherit;
+}
+body 
+{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#parent 
+{
+    /* background-color: rgb(235, 167, 83); */
+    width: 500px;
+    height: 500px;
+}
+
+.joke_area
+{
+    /* background-color: blueviolet; */
+    margin-top: 30%;
+    /* height: 78px; */
+    /* border: 1px solid rosybrown; */
+}
+
+#getJokesBtn
+{
+    margin: 57px 0px 0px 152px;
+    width: 200px;
+    height: 34px;
+    border: none;
+    border-radius: 23px;
+}
+#getJokesBtn:hover
+{
+    cursor: pointer;
+    background-color: wheat;
+}

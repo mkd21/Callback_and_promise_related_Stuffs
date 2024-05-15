@@ -5,16 +5,19 @@ let storage = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo face
 let getJokeBtn = document.getElementById("getJokesBtn");
 let jokeDisplayArea = document.querySelector(".joke_area");
 
-let getJoke = () =>{
-    const response = fetch("https://icanhazdadjoke.com/" , {
+async function getJoke()
+{
+    let res = await fetch("https://icanhazdadjoke.com/" , {
         headers : {
             Accept : "application/json",
         },
-})
-    .then( (res) => res.json())
-    .then( (data) => console.log(data.joke))
-    .catch((e) =>{
-        console.log(e);
-    })
+    });
+
+    let data = await res.json();
+    jokeDisplayArea.innerHTML = data.joke;
+    console.log(data.joke);
+
 }
+ 
+getJoke();
 getJokeBtn.addEventListener("click" , getJoke);
