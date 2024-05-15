@@ -20,7 +20,6 @@ x
     } ,
     function rejectionHandler1(){}
 )
-
 .then(
     function fullfillmentHandler2(value)
     {
