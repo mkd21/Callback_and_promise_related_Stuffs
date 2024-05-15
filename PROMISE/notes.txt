@@ -1,0 +1,6 @@
+promise is just a place holder for asynchronous js code
+
+it stores the future value of the code 
+
+
+promise has methods like catch() , then() , finally() ,  promise.all() and many more.......

@@ -1,0 +1,7 @@
+Task: Don't use Promise on use callback
+
+Q1. write a function to download data form a URL.
+
+Q2. write a function to save that downloaded data in a file and return the file name.
+
+Q3.  write a function to upload the file written in previous step to a new URL.
